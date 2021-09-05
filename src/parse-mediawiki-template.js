@@ -1,7 +1,7 @@
-const regexKey = new RegExp('^\\s*([^=|{}\\[\\]]*)=', '')
-const regexNextField = new RegExp('\\|', 'm')
-const regexEnd = new RegExp('}}', 'm')
-const regexNest = new RegExp('(\\[\\[|\\{\\{)', 'm')
+const regexKey = /^\s*([^=|{}[\]]*)=/
+const regexNextField = /\|/m
+const regexEnd = /}}/m
+const regexNest = /(\[\[|\{\{)/m
 
 function findNested (str) {
   const currentNest = str.match(/^(\{\{|\[\[)(.*)/)
@@ -14,9 +14,9 @@ function findNested (str) {
 
   let regexEndNest
   if (currentNest[1] === '{{') {
-    regexEndNest = new RegExp('\\}\\}', 'm')
+    regexEndNest = /\}\}/m
   } else if (currentNest[1] === '[[') {
-    regexEndNest = new RegExp('\\]\\]', 'm')
+    regexEndNest = /\]\]/m
   }
 
   let mNest = str.match(regexNest)
