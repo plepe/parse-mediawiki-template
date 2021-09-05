@@ -1,7 +1,7 @@
 {
   "name": "parse-mediawiki-template",
   "version": "0.0.0",
-  "description": "Parse all occurences of a Mediawiki Template for Mediawiki text",
+  "description": "Parses all occurences of a Mediawiki Template from Mediawiki text",
   "main": "src/parse-mediawiki-template.js",
   "scripts": {
      "lint": "standard --fix src/*.js",
