@@ -1,4 +1,3 @@
-/* global it:false, describe:false */
 import parseMWTemplate from '@/parse-mediawiki-template.js';
 import { describe, expect, it } from 'vitest';
 
