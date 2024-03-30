@@ -1,6 +1,19 @@
+/// <reference types="vitest" />
 import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vite';
+import { configDefaults } from 'vitest/config';
 import dts from 'vite-plugin-dts';
+
+const testDef = {
+  test: {
+    exclude: [...configDefaults.exclude, './build/**', './dist/**'],
+    coverage: {
+      reporter: ['text', 'html'],
+      extension: ['.ts'],
+      include: ['src'],
+    },
+  },
+};
 
 export default defineConfig({
   base: './',
@@ -23,4 +36,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  ...testDef,
 });

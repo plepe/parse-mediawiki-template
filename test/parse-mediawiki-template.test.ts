@@ -1,5 +1,5 @@
 /* global it:false, describe:false */
-import parseMWTemplate from '../dist/parse-mediawiki-template.js';
+import parseMWTemplate from '@/parse-mediawiki-template.js';
 import { describe, expect, it } from 'vitest';
 
 describe('parseMWTemplate', () => {
