@@ -1,6 +1,6 @@
 {
   "name": "parse-mediawiki-template",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Parses all occurences of a Mediawiki Template from Mediawiki text",
   "type": "module",
   "main": "./dist/parse-mediawiki-template.js",
