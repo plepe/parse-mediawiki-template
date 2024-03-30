@@ -14,6 +14,11 @@ cd parse-mediawiki-template
 npm install
 ```
 
+With script tag in the browser:
+```html
+<script src="https://cdn.jsdelivr.net/npm/parse-mediawiki-template@0.2.0/dist/parse-mediawiki-template.umd.js"></script>
+```
+
 ## USAGE
 The function will parse wikitext (parameter 1) and find all occurences of the specified template (parameter 2). Mediawiki text is case insensitive.
 
