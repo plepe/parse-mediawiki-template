@@ -2,6 +2,7 @@
   "name": "parse-mediawiki-template",
   "version": "0.1.0",
   "description": "Parses all occurences of a Mediawiki Template from Mediawiki text",
+  "type": "module",
   "main": "src/parse-mediawiki-template.js",
   "scripts": {
     "lint": "standard --fix src/*.js",
@@ -18,7 +19,7 @@
   },
   "homepage": "https://github.com/plepe/parse-mediawiki-template#readme",
   "devDependencies": {
-    "mocha": "^9.1.1",
-    "standard": "^16.0.3"
+    "mocha": "^10.4.0",
+    "standard": "^17.1.0"
   }
 }

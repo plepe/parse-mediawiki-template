@@ -35,7 +35,7 @@ function findNested (str) {
   return length
 }
 
-module.exports = function parseMWTemplate (str, templateId) {
+export default function parseMWTemplate (str, templateId) {
   const results = []
 
   const regexStart = new RegExp('(\\{\\{\\s*' + templateId + '\\s*(\\||\\}\\}))', 'im')
