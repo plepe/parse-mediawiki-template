@@ -24,12 +24,14 @@
     "url": "https://github.com/plepe/parse-mediawiki-template/issues"
   },
   "homepage": "https://github.com/plepe/parse-mediawiki-template#readme",
+  "dependencies": {
+    "typescript": "^5.4.3",
+    "vite": "^5.2.7",
+    "vite-plugin-dts": "^3.8.1"
+  },
   "devDependencies": {
     "@types/node": "^20.12.2",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.3",
-    "vite": "^5.2.7",
-    "vite-plugin-dts": "^3.8.1",
     "vitest": "^1.4.0"
   }
 }
