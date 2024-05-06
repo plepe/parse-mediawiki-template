@@ -11,7 +11,8 @@
   "scripts": {
     "build": "tsc && vite build",
     "format": "prettier --write src/",
-    "test": "vitest run"
+    "test": "vitest run",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
