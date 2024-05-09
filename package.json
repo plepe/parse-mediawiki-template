@@ -1,11 +1,17 @@
 {
   "name": "parse-mediawiki-template",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Parses all occurences of a Mediawiki Template from Mediawiki text",
-  "main": "src/parse-mediawiki-template.js",
+  "type": "module",
+  "main": "./dist/parse-mediawiki-template.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "lint": "standard --fix src/*.js",
-    "test": "mocha --bail"
+    "build": "tsc && vite build",
+    "format": "prettier --write src/",
+    "test": "vitest run"
   },
   "repository": {
     "type": "git",
@@ -18,7 +24,11 @@
   },
   "homepage": "https://github.com/plepe/parse-mediawiki-template#readme",
   "devDependencies": {
-    "mocha": "^9.1.1",
-    "standard": "^16.0.3"
+    "@types/node": "^20.12.2",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.7",
+    "vite-plugin-dts": "^3.8.1",
+    "vitest": "^1.4.0"
   }
 }
