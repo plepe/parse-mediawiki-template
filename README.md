@@ -16,7 +16,7 @@ npm install
 
 With script tag in the browser:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/parse-mediawiki-template@0.2.0/dist/parse-mediawiki-template.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/parse-mediawiki-template@0.2.1/dist/parse-mediawiki-template.umd.js"></script>
 ```
 
 ## USAGE
