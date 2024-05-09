@@ -46,3 +46,7 @@ result is:
   }
 ]
 ```
+
+## CONTRIBUTORS
+* Stephan Bösch-Plepelits (initial code)
+* Lenni009 (port to TypeScript)
