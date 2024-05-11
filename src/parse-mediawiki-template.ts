@@ -33,7 +33,7 @@ function findNested(str: string) {
   return length;
 }
 
-export default function parseMWTemplate(str: string, templateId: string) {
+function parseMWTemplate(str: string, templateId: string) {
   const results = [];
 
   const regexStart = new RegExp('(\\{\\{\\s*' + templateId + '\\s*(\\||\\}\\}))', 'im');
@@ -95,3 +95,5 @@ export default function parseMWTemplate(str: string, templateId: string) {
 
   return results;
 }
+
+export default parseMWTemplate;

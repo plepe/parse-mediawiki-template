@@ -1,4 +1,4 @@
-import parseMWTemplate from '@/parse-mediawiki-template.js';
+import parseMWTemplate from '@/parse-mediawiki-template';
 import { describe, expect, it } from 'vitest';
 
 describe('parseMWTemplate', () => {

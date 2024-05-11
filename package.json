@@ -1,6 +1,6 @@
 {
   "name": "parse-mediawiki-template",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Parses all occurences of a Mediawiki Template from Mediawiki text",
   "type": "module",
   "main": "./dist/parse-mediawiki-template.js",
@@ -24,11 +24,11 @@
   },
   "homepage": "https://github.com/plepe/parse-mediawiki-template#readme",
   "devDependencies": {
-    "@types/node": "^20.12.2",
+    "@types/node": "^20.12.11",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.3",
-    "vite": "^5.2.7",
-    "vite-plugin-dts": "^3.8.1",
-    "vitest": "^1.4.0"
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vite-plugin-dts": "^3.9.1",
+    "vitest": "^1.6.0"
   }
 }
